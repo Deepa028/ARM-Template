@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "CaseStudyCluster"
+        },
+        "location": {
+            "value": "centralindia"
+        },
+        "dnsPrefix": {
+            "value": "CaseStudyCluster-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.20.7"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/93a2494a-0ece-4ca1-91b3-9eed1dad5cff/resourceGroups/DefaultResourceGroup-CIN/providers/Microsoft.Network/virtualNetworks/DefaultResourceGroup-CIN-vnet/subnets/default"
+        },
+        "serviceCidr": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.0.0.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-93a2494a-0ece-4ca1-91b3-9eed1dad5cff-CIN"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/93a2494a-0ece-4ca1-91b3-9eed1dad5cff/resourceGroups/DefaultResourceGroup-CIN/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-93a2494a-0ece-4ca1-91b3-9eed1dad5cff-CIN"
+        },
+        "workspaceRegion": {
+            "value": "centralindia"
+        }
+    }
+}
